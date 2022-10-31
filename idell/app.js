@@ -22,7 +22,7 @@ app.controller("myCtrl", function ($scope) {
         $scope.message="User Edited successfully";
 };
     $scope.deleteUser =function (){
-        $scope.users.splice($scope.users.indexOf($scope.clickedUser));
+        $scope.users.splice($scope.users.indexOf($scope.clickedUser),1);
         $scope.message= "User Deleted successfully";
 
     };
